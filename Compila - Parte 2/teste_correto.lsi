@@ -1,0 +1,18 @@
+def func1(int A, int B) {
+    int C;
+    if (A > 20) {
+        C = A + B;
+    } else {
+        C = A - B;
+    }
+    return C;
+}
+
+def principal() {
+    int X, Y, R;
+    X = 4;
+    Y = 5;
+    R = func1(X, Y);
+    print R;
+    return;
+}

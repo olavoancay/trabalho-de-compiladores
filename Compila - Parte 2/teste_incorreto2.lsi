@@ -1,0 +1,9 @@
+def principal() {
+    int X;
+    X = 100;
+    
+    if (X ! 50) { // Erro aqui
+        print X;
+    }
+    return;
+}

@@ -1,0 +1,21 @@
+def principal() {
+    int x;
+    int y;
+    
+    x = 10;
+    y = 5;
+
+    if (x > y { 
+        print x;
+    } else {
+        print y;
+    }
+    
+    return;
+}
+
+def func(int a) {
+    int b;
+    b = a * 10;
+    return b;
+}

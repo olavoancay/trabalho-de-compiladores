@@ -1,0 +1,88 @@
+def fibonacci(int n) {
+    int a;
+    int b;
+    int temp;
+    int i;
+    
+    a = 0;
+    b = 1;
+    i = 0;
+
+    if (n == 0) {
+        return a;
+    }
+
+    if (n == 1) {
+        return b;
+    }
+
+    {
+        ; // Teste de bloco vazio
+    }
+
+    i = 1;
+    if (i < n) {
+        print a;
+        print b;
+        
+        {
+            temp = a + b;
+            a = b;
+            b = temp;
+            i = i + 1;
+            
+            if (i < n) {
+                 temp = a + b;
+                 a = b;
+                 b = temp;
+                 i = i + 1;
+                 
+                 if (i < n) {
+                     temp = a + b;
+                     a = b;
+                     b = temp;
+                     i = i + 1;
+                     
+                     if (i < n) {
+                         temp = a + b;
+                         a = b;
+                         b = temp;
+                         i = i + 1;
+                         
+                         if (i < n) {
+                             temp = a + b;
+                             a = b;
+                             b = temp;
+                             i = i + 1;
+                         }
+                     }
+                 }
+            }
+        }
+    }
+
+    print b;
+    return b;
+}
+
+def principal() {
+    int resultado;
+    int x;
+    x = 10;
+    
+    print x;
+    
+    if (x > 5) {
+        print x;
+    } else {
+        x = x * 2;
+    }
+    
+    resultado = 0; 
+    
+    ; 
+    
+    print resultado; 
+    
+    return;
+}
