@@ -1,0 +1,22 @@
+def principal() {
+    int x;
+    int y;
+    
+    x = 10
+    
+    y = x + 5;
+    
+    if (y > 10) {
+        print y;
+    }
+    
+    return;
+}
+
+def outra() {
+    int a;
+    int b;
+    a = 1;
+    b = 2;
+    print a;
+}
