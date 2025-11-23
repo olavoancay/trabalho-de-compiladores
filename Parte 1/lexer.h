@@ -1,3 +1,12 @@
+/*
+ * ============================================================================
+ * HEADER DO ANALISADOR LÉXICO PARA A LINGUAGEM LSI-2025-2
+ * ============================================================================
+ *
+ * Integrantes: Eduardo Boçon, Darnley Ribeiro, Jiliard Peifer e Olavo Ançay
+ * 
+ * */
+
 #ifndef LEXER_H
 #define LEXER_H
 

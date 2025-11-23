@@ -1,9 +1,0 @@
-def principal() {
-    int X, Y;
-    X = 10;
-    Y = 5;
-    
-    int Z = X @ Y; // Erro aqui
-    print Z;
-    return;
-}
