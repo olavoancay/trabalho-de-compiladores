@@ -1,0 +1,23 @@
+def principal() {
+    int a;
+    int b;
+
+    a = 10;
+    b = 20;
+
+    if (a < b) {
+        print a;
+    }
+
+    a = b + * 5;
+
+    return;
+}
+
+
+def fim() {
+    int z;
+    z = 100;
+    print z;
+    return;
+}

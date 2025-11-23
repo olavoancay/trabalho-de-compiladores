@@ -1,0 +1,65 @@
+def fibonacci(int n) {
+    int a;
+    int b;
+    int temp;
+    int i;
+    a = 0;
+    b = 1;
+    i = 0;
+    if (n == 0) {
+        return a;
+    } else {
+        i = 1;
+    }
+    if (n == 1) {
+        return b;
+    } else {
+        a = 1;
+    }
+    i = 1;
+    if (i < n) {
+        temp = a + b;
+    } else {
+        a = 0;
+    }
+    a = b;
+    b = temp;
+    i = i + 1;
+    print b;
+    return b;
+}
+
+def calcular(int a, int b) {
+    int soma;
+    int diferenca;
+    int produto;
+    soma = a + b;
+    diferenca = a - b;
+    produto = a * b;
+    print soma;
+    print diferenca;
+    print produto;
+    if (soma > 10) {
+        return soma;
+    } else {
+        return produto;
+    }
+}
+
+def principal() {
+    int resultado;
+    int x;
+    int y;
+    int z;
+    x = 10;
+    print x;
+    if (x > 5) {
+        y = x * 2;
+    } else {
+        y = x + 2;
+    }
+    resultado = 0;
+    z = x + y;
+    print resultado;
+    return;
+}
