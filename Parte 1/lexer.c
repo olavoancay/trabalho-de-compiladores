@@ -237,18 +237,7 @@ Token getToken(void) {
     }
 
     /* ----------------------------------------------------------------
-     * AUTÔMATO PARA NÚMEROS (num)
-     * 
-     * Diagrama de transição:
-     * 
-     *      dígito         dígito
-     *     ───────► [q1] ◄───────┐
-     *                │          │
-     *                └──────────┘
-     *                │ (outro)
-     *                ▼
-     *             [ACEITA]
-     * 
+     * NÚMEROS (num)
      * Reconhece: sequências de dígitos decimais (0-9)
      * Exemplos: 0, 42, 100, 2025
      * ---------------------------------------------------------------- */
@@ -263,17 +252,7 @@ Token getToken(void) {
     }
 
     /* ----------------------------------------------------------------
-     * AUTÔMATO PARA IDENTIFICADORES E PALAVRAS-CHAVE (id)
-     * 
-     * Diagrama de transição:
-     * 
-     *      letra          letra/dígito
-     *     ───────► [q1] ◄───────┐
-     *                │          │
-     *                └──────────┘
-     *                │ (outro)
-     *                ▼
-     *             [ACEITA] ──► consulta tabela de símbolos
+     * IDENTIFICADORES E PALAVRAS-CHAVE (id)
      * 
      * Reconhece: sequências começando com letra, seguida de letras/dígitos
      * Exemplos: x, X, func1, variavel, A1B2
@@ -295,16 +274,7 @@ Token getToken(void) {
     }
 
     /* ----------------------------------------------------------------
-     * AUTÔMATO PARA OPERADOR '==' OU ATRIBUIÇÃO '='
-     * 
-     * Diagrama de transição:
-     * 
-     *        '='           '='
-     *     ───────► [q1] ───────► [ACEITA ==]
-     *                │
-     *                │ (outro)
-     *                ▼
-     *             [ACEITA =]
+     * OPERADOR '==' OU ATRIBUIÇÃO '='
      * ---------------------------------------------------------------- */
     if (currentChar == '=') {
         advance();
@@ -316,16 +286,7 @@ Token getToken(void) {
     }
 
     /* ----------------------------------------------------------------
-     * AUTÔMATO PARA OPERADOR '!='
-     * 
-     * Diagrama de transição:
-     * 
-     *        '!'           '='
-     *     ───────► [q1] ───────► [ACEITA !=]
-     *                │
-     *                │ (outro)
-     *                ▼
-     *             [ERRO] ──► '!' sozinho não é válido
+     * OPERADOR '!='
      * ---------------------------------------------------------------- */
     if (currentChar == '!') {
         advance();
@@ -337,16 +298,7 @@ Token getToken(void) {
     }
 
     /* ----------------------------------------------------------------
-     * AUTÔMATO PARA OPERADORES '<' OU '<='
-     * 
-     * Diagrama de transição:
-     * 
-     *        '<'           '='
-     *     ───────► [q1] ───────► [ACEITA <=]
-     *                │
-     *                │ (outro)
-     *                ▼
-     *             [ACEITA <]
+     * OPERADORES '<' OU '<='
      * ---------------------------------------------------------------- */
     if (currentChar == '<') {
         advance();
@@ -358,16 +310,7 @@ Token getToken(void) {
     }
 
     /* ----------------------------------------------------------------
-     * AUTÔMATO PARA OPERADORES '>' OU '>='
-     * 
-     * Diagrama de transição:
-     * 
-     *        '>'           '='
-     *     ───────► [q1] ───────► [ACEITA >=]
-     *                │
-     *                │ (outro)
-     *                ▼
-     *             [ACEITA >]
+     * OPERADORES '>' OU '>='
      * ---------------------------------------------------------------- */
     if (currentChar == '>') {
         advance();
